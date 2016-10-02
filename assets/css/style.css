@@ -1,0 +1,588 @@
+* {
+    font-family: "Work Sans", Arial, sans-serif;
+}
+
+#tchat-wrap {
+    width:100%;
+    position: relative;
+}
+
+#loginInner, #registerInner, #tchatInner {
+    width:100%;
+    height:100%;
+    position:absolute;
+}
+
+#loginWrap, #registerWrap {
+    width: 300px;
+    height:450px;
+    max-width: 90%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background-color: rgb(240,240,240);
+    text-align: center;
+}
+
+#registerWrap {
+    height:550px;
+    margin-top:150px;
+}
+
+#loginWrap input, #registerWrap input {
+    display: block;
+    width:200px;
+    max-width: 100%;
+    height:25px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    background-color: white;
+    border:none;
+    outline:none;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+#loginWrap label, #registerWrap label {
+    display: block;
+    width:100%;
+    text-align: center;
+    padding-bottom:10px;
+    font-size:14px;
+}
+
+.maintitle {
+    width:100%;
+    text-align: center;
+    font-size:30px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+#loginWrap input[type=submit], #registerWrap input[type=submit] {
+    margin-top:47px;
+    background-color: rgb(0,191,129);
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#loginWrap input:focus, #loginWrap input:hover, #registerWrap input:focus, #registerWrap input:hover {
+    border: 1px solid rgb(0,191,129);
+}
+
+#loginWrap input[type=submit]:hover, #registerWrap input[type=submit]:hover {
+    background-color: rgb(0,211,149);
+    border:1px solid rgb(15,211,149);
+}
+
+#loginWrap a, #registerWrap a, #tchatTopRight p a {
+    text-decoration:none;
+    color:rgb(0,191,129);
+}
+
+.tchatTop-blue #tchatTopRight p a {
+    color:rgb(52, 73, 94);
+}
+
+.tchatTop-orange #tchatTopRight p a {
+    color:rgb(231, 76, 60);
+}
+
+#loginWrap a:hover, #registerWrap a:hover, #tchatTopRight p a:hover {
+    text-decoration: underline;
+}
+
+.flash {
+    font-size:14px;
+    font-style:italic;
+    color:rgb(60,60,60);
+    margin-bottom: 15px;
+}
+
+
+#tchatWrap {
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+#tchatMain {
+    width:100%;
+    display:inline-block;
+}
+
+#tchat-comments {
+    height:550px;
+    overflow-y:scroll;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#myProfilePicture {
+    width:75px;
+    height:75px;
+    border-radius:50%;
+    border:2px solid rgb(0,191,129);
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 15px;
+}
+
+.tchatTop-blue #myProfilePicture {
+    border: 2px solid rgb(52, 73, 94);
+}
+
+.tchatTop-orange #myProfilePicture {
+    border: 2px solid rgb(231, 76, 60);
+}
+
+#tchatTop {
+    width:300px;
+    vertical-align: top;
+    background: rgb(240,240,240);
+    margin-right: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    padding:20px;
+    min-height:450px;
+    margin-bottom: 15px;
+}
+
+#tchatTopRight {
+    width:100%;
+    height:180px;
+}
+
+#tchatTopRight p span {
+    font-weight:700;
+    color:rgb(0,191,129);
+}
+
+.modifPicture {
+    padding:0;
+    margin:0;
+    background-color:rgb(0,191,129);
+    color:white;
+    font-size:14px;
+    outline:none;
+    border:none;
+    width:150px;
+    height:22px;
+    line-height: 22px;
+    margin-top:15px;
+    cursor:pointer;
+}
+
+.tchatTop-blue .modifPicture {
+    background-color: rgb(52, 73, 94);
+}
+
+.tchatTop-orange .modifPicture {
+    background-color: rgb(231, 76, 60);
+}
+
+.modifPicture:hover {
+    background-color: rgb(0,211,149);
+}
+
+.tchatTop-blue .modifPicture:hover {
+    background-color: rgb(72, 93, 114);
+}
+
+.tchatTop-orange .modifPicture:hover {
+    background-color: rgb(251, 96, 80);
+}
+
+.choice-color {
+    width:22px;
+    height:22px;
+    cursor:pointer;
+    display: inline-block;
+    margin-right:6px;
+    opacity: .2;
+}
+
+.choice-active {
+    opacity:1;
+}
+
+.choice-color:hover {
+    opacity:1;
+}
+
+.date {
+    width:100%;
+    text-align:left;
+    font-style:italic;
+    color:rgb(200,200,200);
+    font-size:14px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.comment {
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-bottom:1px solid rgb(240,240,240);
+}
+
+.emoticon {
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.commentLeft, .commentLeftPerso {
+    display:inline-block;
+    width:30%;
+    vertical-align: middle;
+}
+
+.commentPicture {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:2px solid rgb(0,191,129);
+    display: inline-block;
+}
+
+.comment-blue .commentPicture {
+    border:2px solid rgb(52, 73, 94);
+}
+
+.comment-orange .commentPicture {
+    border: 2px solid rgb(231, 76, 60);
+}
+
+.commentPseudo {
+    color:rgb(60,60,60);
+    font-weight:700;
+    font-style: italic;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    padding-top:5px;
+}
+
+.commentRight, .commentRightPerso {
+    display:inline-block;
+    width:69%;
+}
+
+.innerCommentRight {
+    background-color:rgb(0,191,129);
+    color:white;
+    min-height:65px;
+    width:90%;
+    box-sizing:border-box;
+    padding:15px;
+    border-radius:5px;
+}
+
+.comment-blue .innerCommentRight {
+    background-color:rgb(52, 73, 94);
+}
+
+.comment-orange .innerCommentRight {
+    background-color: rgb(231, 76, 60);
+}
+
+.commentLeftPerso .commentPicture {
+    border:2px solid rgb(60,60,60);
+}
+
+.commentLeftPerso .commentPseudo {
+    padding-left:auto;
+    padding-right:15px;
+}
+
+.commentRightPerso .innerCommentRight {
+    background-color: rgb(60,60,60);
+}
+
+.commentRightPerso .date {
+    text-align: right;
+}
+
+.commentRightPerso .date p {
+    margin-right:40px;
+    margin-bottom:0;
+}
+
+#tchat-content {
+    margin-bottom:25px;
+}
+
+#comment-message {
+    width:75%;
+    height:40px;
+    box-sizing:border-box;
+    padding:10px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    border:1px solid rgb(0,191,129);
+}
+
+.tchatBody-orange #comment-message {
+    border: 1px solid rgb(231, 76, 60);
+}
+
+.tchatBody-blue #comment-message {
+    border:1px solid rgb(52, 73, 94);
+}
+
+#comment-button {
+    width:24%;
+    height:40px;
+    border:none;
+    outline:none;
+    color:white;
+    background-color:rgb(0,191,129);
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.tchatBody-blue #comment-button {
+    background-color: rgb(52, 73, 94);
+}
+
+.tchatBody-orange #comment-button {
+    background-color: rgb(231, 76, 60);
+}
+
+#comment-button:hover {
+    background-color:rgb(15,211,149);
+}
+
+.tchatBody-orange #comment-button:hover {
+    background-color: rgb(251, 96, 80);
+}
+
+.tchatBody-blue #comment-button:hover {
+    background-color:rgb(72, 93, 114);
+}
+
+#tchatBody .flash {
+    margin-top:15px;
+}
+
+#listConnectes, #listFonctionnalites, #listEmoticons {
+    width: 100%;
+    background:rgb(240,240,240);
+    box-sizing:border-box;
+    padding:20px;
+    text-align:center;
+    min-height:200px;
+    vertical-align:top;
+}
+
+#listFonctionnalites {
+    width:300px;
+    text-align: left;
+}
+
+#listEmoticons, #listConnectes {
+    width:260px;
+}
+
+#listEmoticons {
+    text-align: center;
+}
+
+#listFonctionnalites ul li, #listConnectes {
+    margin-bottom: 15px;
+}
+
+#listEmoticons ul {
+    margin-left: -40px;
+}
+
+#listEmoticons ul li {
+    list-style-type: none;
+    width:50px;
+    display: inline-block;
+}
+
+#listEmoticons ul li span {
+    font-weight:700;
+    color:rgb(120,120,120);
+    font-style:italic;
+}
+
+.emoImg {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.smallTitle {
+    font-size:24px;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.profilePictureMembre {
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:2px solid rgb(0,191,129);
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:5px;
+}
+
+.listCo-blue .profilePictureMembre {
+    border:2px solid  rgb(52, 73, 94);
+}
+
+.listCo-orange .profilePictureMembre {
+    border:2px solid rgb(231, 76, 60);
+}
+
+.pseudoMembre {
+    font-weight:700;
+    color:rgb(60,60,60);
+}
+
+.derniereActivite {
+    font-style:italic;
+    font-size:13px;
+    font-weight: 100;
+    color:rgb(60,60,60);
+    margin-bottom:15px;
+}
+
+.membre {
+    opacity:0.3;
+}
+
+.membreCo {
+    opacity:1;
+}
+
+.change-tof, .change-color {
+    font-size:14px;
+    font-style:italic;
+    font-weight:100;
+}
+
+.change-color {
+    margin-top: 15px;
+}
+
+#tchatColumns {
+    width:1200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#columnLeft {
+    width: 320px;
+    display:inline-block;
+    vertical-align: top;
+    margin-right:15px;
+    height:746px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+#columnMid {
+    width:560px; /* normalement 640px */
+    display:inline-block;
+    vertical-align: top;
+    margin-right:15px;
+}
+
+#columnRight {
+    width:280px;
+    display: inline-block;
+    vertical-align: top;
+    height:746px;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+#bigBloc {
+    width:100%;
+    height:100px;
+    background-color:rgb(0,191,129);
+    margin-bottom:30px;
+    border-radius:5px;
+}
+
+.bigBloc-blue {
+    background-color: rgb(52, 73, 94) !important;
+}
+
+.bigBloc-orange {
+    background-color: rgb(231, 76, 60) !important;
+}
+
+#scrollHere {
+    padding:0 !important;
+}
+
+#fh5co-footer .fh5co-copyright small {
+    color:white;
+}
+
+#fh5co-header nav li.fh5co-active a {
+    text-decoration: none;
+}
+
+.mobile {
+	display:none;
+}
+
+@media screen and (max-width: 1360px) {
+	.mobile {
+		display:block;
+	}
+	
+  #columnLeft, #columnRight, #bigBloc {
+	  display:none;
+  }
+  
+  #columnMid {
+	  width:100%;
+	  margin-right:auto;
+  }
+  
+  #tchatColumns {
+	  width:100%;
+	  padding:auto;
+	  max-width:95%;
+	  margin-left:2.5%;
+	  position:fixed;
+	  bottom:0;
+	  padding:0;
+  }
+  
+  #comment-message {
+	  width:74%;
+  }
+  
+  #loginWrap, #registerWrap {
+	margin-top:40px;
+  }
+  
+  .logout {
+	  background:url('../images/logout.png') no-repeat center center;
+	  background-size:100%;
+	  position:fixed;
+	  top:25px;
+	  right:25px;
+	  z-index:5;
+	  width:30px;
+	  height:30px;
+	  cursor:pointer;
+  }
+}
